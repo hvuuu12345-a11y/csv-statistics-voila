@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Statistics Dashboard</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #eaf3ff, #f5f8ff);
+            color: #243247;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #145da0;
+            color: white;
+            padding: 22px 10%;
+        }
+
+        header h2 {
+            font-size: 24px;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 75px auto;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .container h1 {
+            color: #145da0;
+            font-size: 38px;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            font-size: 17px;
+            line-height: 1.8;
+            color: #526176;
+            margin-bottom: 35px;
+        }
+
+        .card {
+            background: white;
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .feature {
+            background: #f0f6ff;
+            padding: 20px;
+            border-radius: 12px;
+            font-size: 16px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #1674d1;
+            color: white;
+            text-decoration: none;
+            padding: 15px 32px;
+            border-radius: 10px;
+            font-size: 17px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0b4f91;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #718096;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 35px auto;
+            }
+
+            .container h1 {
+                font-size: 28px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>CSV Statistics Dashboard</h2>
+    </header>
+
+    <div class="container">
+
+        <h1>ỨNG DỤNG THỐNG KÊ CSV</h1>
+
+        <p class="description">
+            Công cụ hỗ trợ phân tích dữ liệu CSV trực tuyến,
+            tính toán thống kê mô tả và trực quan hóa dữ liệu
+            thông qua các biểu đồ.
+        </p>
+
+        <div class="card">
+
+            <h2>Chức năng chính</h2>
+
+            <div class="features">
+                <div class="feature">📂 Tải lên file CSV</div>
+                <div class="feature">📊 Xem bảng dữ liệu</div>
+                <div class="feature">📈 Thống kê mô tả</div>
+                <div class="feature">📉 Trực quan hóa dữ liệu</div>
+            </div>
+
+            <a class="btn"
+               href="https://csv-statistics-voila-pn7n.onrender.com"
+               target="_blank">
+                MỞ ỨNG DỤNG CSV →
+            </a>
+
+        </div>
+
+    </div>
+
+    <footer>
+        CSV Statistics Dashboard | Python - Pandas - Voilà
+    </footer>
+
+</body>
+</html>
